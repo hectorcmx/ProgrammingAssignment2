@@ -4,7 +4,7 @@
 ## makeCacheMatrix containes 4 functions set, get, setinverse, getinverse.
 ## get.-returns de vector x    set.- change the vectore stored in the main function just in case of a new valor
 ## the variable m is used to determinate when the matrix inverse has been already calculated
-## getinverse and setinverse are used to put the value in m variable
+## getinverse and setinverse are used to put the value in m variable.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
   setinverse <- function(solve) m <<- solve
   getinverse <- function() m
   list(set = set, get = get,
-       setinverse = setinverse,
+       setinverse = setinverse, 
        getinverse = getinverse)
 
 }
